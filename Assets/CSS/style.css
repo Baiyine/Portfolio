@@ -1,0 +1,92 @@
+body, html {
+    margin:0;
+    padding:0;
+    background-color: rgb(97, 129, 111)
+}
+
+body {
+    font-family: fantasy;
+}
+
+header {
+    background-color: rgb(107, 218, 157);
+    font-family:cursive;
+    font-weight: bold;
+    text-align: center;
+    padding:9px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color:rgb(74, 33, 33)
+}
+/* centers pic*/
+.MyPic {
+    display: flex;
+    justify-content: center;
+}
+/* box to hold text block for about me */
+section {
+    padding:20px
+}
+
+.AboutMe {
+    position:relative;
+}
+/* text box to sit on top of image*/
+.text-block {
+  position:absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgb(198, 99, 145);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.MyWork {
+    position: relative;
+}
+.MyWork img {
+    width:550px;
+    height:550px;
+    
+}
+/*see above*/
+.text-block2 {
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(66, 47, 18);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center; align-items: flex-end
+
+}
+/*makes page phone/ tableet accessible*/
+@media (max-width: 768px) {
+    .about_me img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mywork img {
+        width: 100px;
+        height: 100px;
+    }
+}
